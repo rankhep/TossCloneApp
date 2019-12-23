@@ -72,11 +72,11 @@
                 <com.loopeer.shadow.ShadowView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:elevation="10dp"
-                    app:shadowDy="10"
-                    app:cornerRadius="4dp"
-                    app:shadowMarginBottom="16dp"
                     android:layout_marginBottom="-8dp"
+                    android:elevation="10dp"
+                    app:cornerRadius="4dp"
+                    app:shadowDy="10"
+                    app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
                     app:shadowMarginRight="16dp"
                     app:shadowMarginTop="16dp"
@@ -381,9 +381,9 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_marginBottom="16dp"
                             android:layout_width="wrap_content"
-                            android:layout_height="?attr/actionBarSize">
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_marginBottom="16dp">
 
                             <ImageView
                                 android:layout_width="36dp"
@@ -423,17 +423,158 @@
 
                 </com.loopeer.shadow.ShadowView>
 
+                <com.loopeer.shadow.ShadowView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginBottom="-8dp"
+                    android:elevation="10dp"
+                    app:cornerRadius="4dp"
+                    app:shadowDy="10"
+                    app:shadowMarginBottom="16dp"
+                    app:shadowMarginLeft="16dp"
+                    app:shadowMarginRight="16dp"
+                    app:shadowMarginTop="16dp"
+                    app:shadowRadius="14dp">
+
+                    <LinearLayout
+                        android:id="@+id/toojaBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@drawable/bg_round_square_white"
+                        android:paddingHorizontal="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="투자"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_navigate_next_black_24dp"
+                            android:tint="#999" />
+
+                    </LinearLayout>
+
+                </com.loopeer.shadow.ShadowView>
 
                 <com.loopeer.shadow.ShadowView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginBottom="-8dp"
+                    android:elevation="10dp"
+                    app:cornerRadius="4dp"
+                    app:shadowDy="10"
+                    app:shadowMarginBottom="16dp"
+                    app:shadowMarginLeft="16dp"
+                    app:shadowMarginRight="16dp"
+                    app:shadowMarginTop="16dp"
+                    app:shadowRadius="14dp">
+
+                    <LinearLayout
+                        android:id="@+id/creditLevelBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@drawable/bg_round_square_white"
+                        android:paddingHorizontal="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="신용"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_navigate_next_black_24dp"
+                            android:tint="#999" />
+
+                    </LinearLayout>
+
+                </com.loopeer.shadow.ShadowView>
+
+                <com.loopeer.shadow.ShadowView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
+                    android:layout_marginBottom="-8dp"
+                    android:elevation="10dp"
+                    app:cornerRadius="4dp"
+                    app:shadowDy="10"
+                    app:shadowMarginBottom="16dp"
+                    app:shadowMarginLeft="16dp"
+                    app:shadowMarginRight="16dp"
+                    app:shadowMarginTop="16dp"
+                    app:shadowRadius="14dp">
+
+                    <LinearLayout
+                        android:id="@+id/borrowCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@drawable/bg_round_square_white"
+                        android:paddingHorizontal="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="대출"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_navigate_next_black_24dp"
+                            android:tint="#999" />
+
+                    </LinearLayout>
+
+                </com.loopeer.shadow.ShadowView>
+
+
+                <com.loopeer.shadow.ShadowView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-8dp"
                     android:elevation="10dp"
                     app:cornerRadius="4dp"
                     app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
                     app:shadowMarginRight="16dp"
                     app:shadowMarginTop="16dp"
-                    android:layout_marginTop="-8dp"
                     app:shadowRadius="14dp">
 
                     <LinearLayout

@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
         <TextView
             android:text="홈"
+            android:visibility="invisible"
             android:id="@+id/tabName"
             android:textSize="15sp"
             android:textColor="#000"

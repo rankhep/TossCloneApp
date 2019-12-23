@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
+import com.example.toss.fragment.MainFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -36,7 +37,9 @@ class MainActivity : AppCompatActivity() {
 
         val fm: FragmentManager = supportFragmentManager
         val fragmentTransaction: FragmentTransaction = fm.beginTransaction()
-        fragmentTransaction.add(R.id.fragment, MainFragment())
+        fragmentTransaction.add(R.id.fragment,
+            MainFragment()
+        )
         fragmentTransaction.commit()
 
         LocalBroadcastManager.getInstance(this)

@@ -1,4 +1,4 @@
-package com.example.toss
+package com.example.toss.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
+import com.example.toss.R
 import kotlinx.android.synthetic.main.fragment_main.view.*
 
 

@@ -17,8 +17,9 @@ class CreditActivity :AppCompatActivity (){
         mAdapter = CreditViewPagerAdapter(supportFragmentManager)
         viewPager.adapter = mAdapter
 
-        tab.addTab(tab.newTab().setText("내 카드 현황"))
-        tab.addTab(tab.newTab().setText("카드 혜택추천"))
+        tab.addTab(tab.newTab().setText("신용관리"))
+        tab.addTab(tab.newTab().setText("대출추천"))
+        tab.addTab(tab.newTab().setText("카드추천"))
 
         tab.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabReselected(p0: TabLayout.Tab?) {

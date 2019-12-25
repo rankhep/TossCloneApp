@@ -94,6 +94,7 @@
 
 
             <ImageView
+                android:id="@+id/homeIcon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
@@ -102,6 +103,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
+                android:id="@+id/homeText"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="4dp"
@@ -130,6 +132,7 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:layout_gravity="center"
+                android:id="@+id/dayOutLine"
                 android:background="@drawable/bg_round_square">
 
                 <View
@@ -149,7 +152,7 @@
                     android:id="@+id/day"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="20"
+                    android:text="25"
                     android:textColor="#000"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -160,6 +163,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/timeLineText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -185,6 +189,7 @@
 
 
             <ImageView
+                android:id="@+id/createIcon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
@@ -192,6 +197,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
+                android:id="@+id/createText"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="4dp"
@@ -216,7 +222,7 @@
 
 
             <ImageView
-                android:id="@+id/menuBtn"
+                android:id="@+id/menuIcon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"

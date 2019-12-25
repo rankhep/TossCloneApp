@@ -7,23 +7,20 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.toss.R
 
-class RecommendFragment: Fragment() {
+class MenuFragment:Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val v = inflater.inflate(R.layout.fragment_recommend_borrow, container, false)
-        v.run {
-
-        }
+        val v = inflater.inflate(R.layout.fragment_menu, container, false)
         return v
     }
 
-    companion object {
 
+    companion object {
         @JvmStatic
         fun newInstance() =
-            RecommendFragment().apply {
+            MenuFragment().apply {
 
             }
     }

@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
+import com.example.toss.AccountActivity
 import com.example.toss.BorrowActivity
+import com.example.toss.CardActivity
 import com.example.toss.R
 import kotlinx.android.synthetic.main.fragment_main.view.*
 
@@ -48,6 +50,14 @@ class MainFragment : Fragment() {
             }
             borrowCard.setOnClickListener {
                 startActivity(Intent(context, BorrowActivity::class.java))
+            }
+
+            accountCard.setOnClickListener {
+                startActivity(Intent(context, AccountActivity::class.java))
+            }
+
+            cardCard.setOnClickListener {
+                startActivity(Intent(context, CardActivity::class.java))
             }
         }
         return view

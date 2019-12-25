@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         val fm: FragmentManager = supportFragmentManager
         val fragmentTransaction: FragmentTransaction = fm.beginTransaction()
         fragmentTransaction.add(R.id.fragment,
@@ -46,4 +47,10 @@ class MainActivity : AppCompatActivity() {
             .registerReceiver(mMessageReceiver, IntentFilter("custom-event-name"))
 
     }
+
+
+    private fun setFragment(){
+
+    }
+
 }

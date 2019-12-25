@@ -1,19 +1,20 @@
 package com.example.toss
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.toss.adapter.CardViewPagerAdapter
+import androidx.appcompat.app.AppCompatActivity
+import com.example.toss.adapter.CreditViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.activity_card.*
+import kotlinx.android.synthetic.main.activity_borrow_credit.*
 
-class CardActivity : AppCompatActivity() {
-    private lateinit var mAdapter: CardViewPagerAdapter
+class CreditActivity :AppCompatActivity (){
+    private lateinit var mAdapter: CreditViewPagerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_card)
+        setContentView(R.layout.activity_borrow_credit)
 
-        mAdapter = CardViewPagerAdapter(supportFragmentManager)
+
+        mAdapter = CreditViewPagerAdapter(supportFragmentManager)
         viewPager.adapter = mAdapter
 
         tab.addTab(tab.newTab().setText("내 카드 현황"))
@@ -38,6 +39,4 @@ class CardActivity : AppCompatActivity() {
             finish()
         }
     }
-
-
 }

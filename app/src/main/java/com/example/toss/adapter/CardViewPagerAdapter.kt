@@ -3,6 +3,7 @@ package com.example.toss.adapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.example.toss.fragment.CardRecommndFragment
 import com.example.toss.fragment.MyCardFragment
 import com.example.toss.fragment.RecommendFragment
 
@@ -14,7 +15,7 @@ class CardViewPagerAdapter(fragmentManager: FragmentManager) :
                 return MyCardFragment.newInstance()
             }
             1 -> {
-                return RecommendFragment.newInstance()
+                return CardRecommndFragment.newInstance()
             }
         }
         return RecommendFragment.newInstance()

@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/swipeLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#fff">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -44,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:fontFamily="@font/spoqa_han_sans_regular"
-                    android:text="최동근"
+                    android:text="조성태"
                     android:textColor="#000"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toTopOf="@id/myProfile"
@@ -76,13 +75,13 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="4dp"
+                    app:cornerRadius="8dp"
                     app:shadowDy="10"
                     app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
                     app:shadowMarginRight="16dp"
                     app:shadowMarginTop="8dp"
-                    app:shadowRadius="14dp">
+                    app:shadowRadius="24dp">
 
                     <LinearLayout
                         android:id="@+id/sendMoneyCard"
@@ -124,12 +123,12 @@
                     android:layout_marginTop="-8dp"
                     android:layout_marginBottom="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="4dp"
+                    app:cornerRadius="8dp"
                     app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
                     app:shadowMarginRight="16dp"
                     app:shadowMarginTop="16dp"
-                    app:shadowRadius="14dp">
+                    app:shadowRadius="24dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -160,6 +159,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:text="27,018원"
                                 android:layout_gravity="center"
                                 android:fontFamily="@font/spoqa_han_sans_regular"
                                 android:textColor="#000" />
@@ -202,7 +202,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/spoqa_han_sans_regular"
-                                    android:text="85,013,050원"
+                                    android:text="18원"
                                     android:textColor="#000"
                                     android:textSize="14sp" />
 
@@ -296,13 +296,13 @@
                     android:layout_marginTop="-8dp"
                     android:layout_marginBottom="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="4dp"
+                    app:cornerRadius="8dp"
                     app:shadowMarginBottom="16dp"
 
                     app:shadowMarginLeft="16dp"
                     app:shadowMarginRight="16dp"
                     app:shadowMarginTop="16dp"
-                    app:shadowRadius="14dp">
+                    app:shadowRadius="24dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -434,52 +434,7 @@
 
                 </com.loopeer.shadow.ShadowView>
 
-                <com.loopeer.shadow.ShadowView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-8dp"
-                    android:layout_marginBottom="-8dp"
-                    android:elevation="10dp"
-                    app:cornerRadius="4dp"
-                    app:shadowDy="10"
-                    app:shadowMarginBottom="16dp"
-                    app:shadowMarginLeft="16dp"
-                    app:shadowMarginRight="16dp"
-                    app:shadowMarginTop="16dp"
-                    app:shadowRadius="14dp">
 
-                    <LinearLayout
-                        android:id="@+id/toojaBtn"
-                        android:layout_width="match_parent"
-                        android:layout_height="?attr/actionBarSize"
-                        android:background="@drawable/bg_round_square_white"
-                        android:paddingHorizontal="16dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="투자"
-                            android:fontFamily="@font/spoqa_han_sans_regular"
-                            android:textColor="#000"
-                            android:textSize="18sp"/>
-
-                        <View
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1" />
-
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_navigate_next_black_24dp"
-                            android:tint="#999" />
-
-                    </LinearLayout>
-
-                </com.loopeer.shadow.ShadowView>
 
                 <com.loopeer.shadow.ShadowView
                     android:layout_width="match_parent"
@@ -487,13 +442,13 @@
                     android:layout_marginTop="-8dp"
                     android:layout_marginBottom="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="4dp"
+                    app:cornerRadius="8dp"
                     app:shadowDy="10"
                     app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
                     app:shadowMarginRight="16dp"
                     app:shadowMarginTop="16dp"
-                    app:shadowRadius="14dp">
+                    app:shadowRadius="24dp">
 
                     <LinearLayout
                         android:id="@+id/creditLevelBtn"
@@ -534,13 +489,13 @@
                     android:layout_marginTop="-8dp"
                     android:layout_marginBottom="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="4dp"
+                    app:cornerRadius="8dp"
                     app:shadowDy="10"
                     app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
                     app:shadowMarginRight="16dp"
                     app:shadowMarginTop="16dp"
-                    app:shadowRadius="14dp">
+                    app:shadowRadius="24dp">
 
                     <LinearLayout
                         android:id="@+id/borrowCard"
@@ -581,12 +536,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="4dp"
+                    app:cornerRadius="8dp"
                     app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
                     app:shadowMarginRight="16dp"
                     app:shadowMarginTop="16dp"
-                    app:shadowRadius="14dp">
+                    app:shadowRadius="24dp">
 
                     <LinearLayout
                         android:id="@+id/addBtn"

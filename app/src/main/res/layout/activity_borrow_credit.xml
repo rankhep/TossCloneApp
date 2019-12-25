@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="32dp"
             android:text="대출"
+            android:fontFamily="@font/spoqa_han_sans_regular"
             android:textColor="#000"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"

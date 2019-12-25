@@ -29,6 +29,7 @@
             android:id="@+id/tabNameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/spoqa_han_sans_regular"
             android:layout_margin="32dp"
             android:text="카드"
             android:textColor="#000"

@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
+import com.example.toss.BorrowActivity
 import com.example.toss.R
 import kotlinx.android.synthetic.main.fragment_main.view.*
 
@@ -34,7 +35,7 @@ class MainFragment : Fragment() {
                         val intent = Intent("custom-event-name")
                         intent.putExtra("message", true)
                         LocalBroadcastManager.getInstance(context).sendBroadcast(intent)
-                    }else{
+                    } else {
 
                         val intent = Intent("custom-event-name")
                         intent.putExtra("message", false)
@@ -44,6 +45,9 @@ class MainFragment : Fragment() {
 
             sendMoneyCard.setOnClickListener {
                 Toast.makeText(context, "점검중입니다.", Toast.LENGTH_SHORT).show()
+            }
+            borrowCard.setOnClickListener {
+                startActivity(Intent(context, BorrowActivity::class.java))
             }
         }
         return view

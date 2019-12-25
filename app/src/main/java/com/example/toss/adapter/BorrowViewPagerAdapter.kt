@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.toss.fragment.MyBorrowFragment
+import com.example.toss.fragment.RecommendFragment
 
 class BorrowViewPagerAdapter(fragmentManager: FragmentManager) :
     FragmentPagerAdapter(fragmentManager) {
@@ -13,10 +14,10 @@ class BorrowViewPagerAdapter(fragmentManager: FragmentManager) :
                 return MyBorrowFragment.newInstance()
             }
             1 -> {
-
+                return RecommendFragment()
             }
         }
-        return MyBorrowFragment.newInstance()
+        return RecommendFragment.newInstance()
     }
 
     override fun getCount(): Int = 2

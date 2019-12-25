@@ -26,5 +26,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_round_square"
+        android:backgroundTint="#eee"
+        android:drawableRight="@drawable/ic_search_black_24dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_search_black_24dp" />
+    </LinearLayout>
+
 
 </LinearLayout>

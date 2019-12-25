@@ -20,7 +20,7 @@ class CreditLevelFragment : Fragment() {
     companion object {
         @JvmStatic
         fun newInstance() =
-            CardRecommndFragment().apply {
+            CreditLevelFragment().apply {
 
             }
     }

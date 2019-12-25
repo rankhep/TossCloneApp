@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         ) {
             val b = intent.getBooleanExtra("message", false)
             topShadow.visibility = if (b) View.VISIBLE else View.INVISIBLE
-            tabName.text = tabNameStr
             tabName.visibility = if (b) View.VISIBLE else View.INVISIBLE
         }
 
@@ -53,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         createBtn.setOnClickListener {
             setBottomBar()
             val f =fm.beginTransaction()
-            f.add(R.id.fragment, CreateFragment.newInstance())
+            f.replace(R.id.fragment, CreateFragment.newInstance())
             f.commit()
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
                 createText.setTextColor(applicationContext.getColor(R.color.colorPrimary))
@@ -66,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
         homeBtn.setOnClickListener {
             val f = fm.beginTransaction()
-            f.add(R.id.fragment, MainFragment())
+            f.replace(R.id.fragment, MainFragment())
             f.commit()
             addBtn.visibility = View.VISIBLE
             setBottomBar()
@@ -81,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             setBottomBar()
             addBtn.visibility = View.INVISIBLE
             val f = fm.beginTransaction()
-            f.add(R.id.fragment, MenuFragment.newInstance())
+            f.replace(R.id.fragment, MenuFragment.newInstance())
             f.commit()
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
                 menuText.setTextColor(applicationContext.getColor(R.color.colorPrimary))

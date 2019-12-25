@@ -86,9 +86,10 @@
             android:fontFamily="@font/spoqa_han_sans_regular"
             android:paddingLeft="10dp"
             android:paddingTop="8dp"
+            android:maxLines="1"
             android:paddingRight="10dp"
             android:paddingBottom="8dp"
-            android:text="자동차 구"
+            android:text="자동차 구매"
             android:textSize="12sp" />
 
     </LinearLayout>

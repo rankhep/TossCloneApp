@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
@@ -37,10 +38,10 @@
                     android:layout_weight="1" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_swap_vert_black_24dp" />
+                    android:src="@drawable/ic_setting" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -78,7 +79,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_circle_plus" />
+                    android:src="@drawable/ic_headset" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -116,7 +117,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/calender" />
+                    android:src="@drawable/ic_loudspeaker" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -165,6 +166,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/spoqa_han_sans_light"
             android:text="송금" />
 
         <LinearLayout
@@ -176,13 +178,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_thunder" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="송금"
                 android:textColor="#000" />
         </LinearLayout>
@@ -196,13 +198,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_n_per_one" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="더치페이"
                 android:textColor="#000" />
         </LinearLayout>
@@ -216,13 +218,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_calendar" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="자동이체"
                 android:textColor="#000" />
         </LinearLayout>
@@ -233,6 +235,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/spoqa_han_sans_light"
             android:text="조회" />
 
         <LinearLayout
@@ -244,13 +247,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_whightgraycard" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="계좌 조회"
                 android:textColor="#000" />
         </LinearLayout>
@@ -264,13 +267,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_widthbluecard" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="카드 조회"
                 android:textColor="#000" />
         </LinearLayout>
@@ -284,13 +287,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_ygbcircle" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="내 소비 분석"
                 android:textColor="#000" />
         </LinearLayout>
@@ -301,6 +304,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/spoqa_han_sans_light"
             android:text="카드" />
 
         <LinearLayout
@@ -312,13 +316,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_highgraycard" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="토스카드"
                 android:textColor="#000" />
         </LinearLayout>
@@ -332,13 +336,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_clock" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="토스카드 게릴라 캐시백"
                 android:textColor="#000" />
         </LinearLayout>
@@ -349,6 +353,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/spoqa_han_sans_light"
             android:text="투자" />
 
         <LinearLayout
@@ -360,13 +365,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_twotown" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="부동산 소액투자"
                 android:textColor="#000" />
         </LinearLayout>
@@ -377,6 +382,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/spoqa_han_sans_light"
             android:text="계좌 개설" />
 
         <LinearLayout
@@ -388,13 +394,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_whightgraycard" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="예금 및 적금"
                 android:textColor="#000" />
         </LinearLayout>
@@ -408,13 +414,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_cardhome" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="주택청약저축"
                 android:textColor="#000" />
         </LinearLayout>
@@ -428,13 +434,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_people" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="함께 쓰는 계좌"
                 android:textColor="#000" />
         </LinearLayout>
@@ -448,13 +454,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_card_recycle" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="비상금 모으기"
                 android:textColor="#000" />
         </LinearLayout>
@@ -466,6 +472,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/spoqa_han_sans_light"
             android:text="부동산" />
 
         <LinearLayout
@@ -477,13 +484,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_house" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="내 부동산 시세조회"
                 android:textColor="#000" />
         </LinearLayout>
@@ -497,13 +504,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_town" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="아파트 관리비 조회 및 납부"
                 android:textColor="#000" />
         </LinearLayout>
@@ -514,6 +521,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/spoqa_han_sans_light"
             android:text="여행 " />
 
         <LinearLayout
@@ -525,13 +533,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_dollar" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="환전"
                 android:textColor="#000" />
         </LinearLayout>
@@ -542,6 +550,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/spoqa_han_sans_light"
             android:text="멤버십 헤택" />
 
         <LinearLayout
@@ -553,13 +562,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_toss" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="토스 프라임"
                 android:textColor="#000" />
         </LinearLayout>
@@ -570,6 +579,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/spoqa_han_sans_light"
             android:text="혜택" />
 
         <LinearLayout
@@ -581,13 +591,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_yellowbox" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="행운퀴즈"
                 android:textColor="#000" />
         </LinearLayout>
@@ -601,13 +611,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_shoes" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="토스만보기"
                 android:textColor="#000" />
         </LinearLayout>
@@ -621,13 +631,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_percent" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="할인 혜택"
                 android:textColor="#000" />
         </LinearLayout>
@@ -641,13 +651,13 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_card_arrow" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="카드값 돌려받기"
                 android:textColor="#000" />
         </LinearLayout>
@@ -658,6 +668,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/spoqa_han_sans_light"
             android:text="편의기능" />
 
         <LinearLayout
@@ -669,14 +680,14 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_letter" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
-                android:text="상품권 캐시전황"
+                android:fontFamily="@font/spoqa_han_sans_regular"
+                android:text="상품권 캐시전환"
                 android:textColor="#000" />
         </LinearLayout>
 
@@ -690,36 +701,17 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
+                android:src="@drawable/ic_green_w_" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
+                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="ATM 현금찾기"
                 android:textColor="#000" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:src="@drawable/ic_circle_plus" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="@font/spoqa_han_sans_light"
-                android:text="선물하기"
-                android:textColor="#000" />
-        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

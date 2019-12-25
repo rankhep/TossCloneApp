@@ -69,7 +69,6 @@
             android:layout_marginLeft="16dp"
             android:text="27,018원"
             android:textColor="#000"
-            android:fontFamily="@font/spoqa_han_sans_bold"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -106,8 +105,9 @@
 
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_marginTop="-3dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/spoqa_han_sans_regular"
+                android:textStyle="bold"
                 android:text="18원"
                 android:textColor="#000"
                 android:textSize="16sp" />
@@ -172,9 +172,10 @@
                 android:textSize="14sp" />
 
             <TextView
+                android:layout_marginTop="-3dp"
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/spoqa_han_sans_regular"
                 android:text="27,000원"
                 android:textColor="#000"
                 android:textSize="16sp" />

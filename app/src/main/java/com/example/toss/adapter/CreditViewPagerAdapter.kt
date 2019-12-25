@@ -17,8 +17,13 @@ class CreditViewPagerAdapter(fragmentManager: FragmentManager):FragmentStatePage
             1 -> {
                 return RecommendFragment()
             }
+
+            2->{
+                return CardRecommndFragment.newInstance()
+            }
+
         }
-        return CardRecommndFragment.newInstance()
+        return CreditLevelFragment.newInstance()
     }
 
     override fun getCount(): Int = 3

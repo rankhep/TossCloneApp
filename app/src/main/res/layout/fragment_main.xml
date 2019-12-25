@@ -21,6 +21,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/profileCard"
                 android:layout_width="match_parent"
+                android:background="#fff"
                 android:layout_height="?attr/actionBarSize"
                 android:layout_marginTop="16dp"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -31,7 +32,6 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_margin="16dp"
-                    android:background="#ccc"
                     android:src="@drawable/ic_profile"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -42,7 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:fontFamily="@font/spoqa_han_sans_bold"
                     android:text="조성태"
                     android:textColor="#000"
                     android:textSize="16sp"
@@ -75,7 +75,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="8dp"
+                    app:cornerRadius="16dp"
                     app:shadowDy="10"
                     app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
@@ -86,7 +86,7 @@
                     <LinearLayout
                         android:id="@+id/sendMoneyCard"
                         android:layout_width="match_parent"
-                        android:layout_height="?attr/actionBarSize"
+                        android:layout_height="70dp"
                         android:background="@drawable/bg_round_square_white"
                         android:paddingHorizontal="16dp">
 
@@ -94,7 +94,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/spoqa_han_sans_regular"
+                            android:fontFamily="@font/spoqa_han_sans_bold"
                             android:text="송금하기"
                             android:textColor="#000"
                             android:textSize="18sp" />
@@ -123,7 +123,7 @@
                     android:layout_marginTop="-8dp"
                     android:layout_marginBottom="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="8dp"
+                    app:cornerRadius="16dp"
                     app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
                     app:shadowMarginRight="16dp"
@@ -146,7 +146,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:fontFamily="@font/spoqa_han_sans_regular"
+                                android:fontFamily="@font/spoqa_han_sans_bold"
                                 android:text="계좌"
                                 android:textColor="#000"
                                 android:textSize="18sp" />
@@ -161,8 +161,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="27,018원"
                                 android:layout_gravity="center"
-                                android:fontFamily="@font/spoqa_han_sans_regular"
-                                android:textColor="#000" />
+                                android:textColor="#666" />
 
                             <ImageView
                                 android:layout_width="wrap_content"
@@ -201,8 +200,9 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/spoqa_han_sans_regular"
+                                    android:layout_marginTop="-2dp"
                                     android:text="18원"
+                                    android:textStyle="bold"
                                     android:textColor="#000"
                                     android:textSize="14sp" />
 
@@ -259,8 +259,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/spoqa_han_sans_regular"
-                                    android:layout_marginTop="4dp"
+                                    android:textStyle="bold"
                                     android:text="27,000원"
                                     android:textColor="#000"
                                     android:textSize="14sp" />
@@ -296,7 +295,7 @@
                     android:layout_marginTop="-8dp"
                     android:layout_marginBottom="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="8dp"
+                    app:cornerRadius="16dp"
                     app:shadowMarginBottom="16dp"
 
                     app:shadowMarginLeft="16dp"
@@ -326,7 +325,7 @@
                                 android:text="카드"
                                 android:textColor="#000"
                                 android:textSize="18sp"
-                                android:fontFamily="@font/spoqa_han_sans_regular"
+                                android:fontFamily="@font/spoqa_han_sans_bold"
                                 />
 
                             <View
@@ -338,9 +337,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:fontFamily="@font/spoqa_han_sans_regular"
                                 android:text="0원"
-                                android:textColor="#000" />
+                                android:textColor="#666" />
 
                             <ImageView
                                 android:layout_width="wrap_content"
@@ -442,7 +440,7 @@
                     android:layout_marginTop="-8dp"
                     android:layout_marginBottom="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="8dp"
+                    app:cornerRadius="16dp"
                     app:shadowDy="10"
                     app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
@@ -453,14 +451,14 @@
                     <LinearLayout
                         android:id="@+id/creditLevelBtn"
                         android:layout_width="match_parent"
-                        android:layout_height="?attr/actionBarSize"
+                        android:layout_height="70dp"
                         android:background="@drawable/bg_round_square_white"
                         android:paddingHorizontal="16dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/spoqa_han_sans_regular"
+                            android:fontFamily="@font/spoqa_han_sans_bold"
                             android:layout_gravity="center"
                             android:text="신용"
                             android:textColor="#000"
@@ -471,6 +469,13 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1" />
 
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="6등급"/>
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -489,7 +494,7 @@
                     android:layout_marginTop="-8dp"
                     android:layout_marginBottom="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="8dp"
+                    app:cornerRadius="16dp"
                     app:shadowDy="10"
                     app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
@@ -500,7 +505,7 @@
                     <LinearLayout
                         android:id="@+id/borrowCard"
                         android:layout_width="match_parent"
-                        android:layout_height="?attr/actionBarSize"
+                        android:layout_height="70dp"
                         android:background="@drawable/bg_round_square_white"
                         android:paddingHorizontal="16dp">
 
@@ -509,7 +514,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:text="대출"
-                            android:fontFamily="@font/spoqa_han_sans_regular"
+                            android:fontFamily="@font/spoqa_han_sans_bold"
                             android:textColor="#000"
                             android:textSize="18sp" />
 
@@ -518,6 +523,12 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1" />
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="6,302,000원"/>
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -536,7 +547,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="-8dp"
                     android:elevation="10dp"
-                    app:cornerRadius="8dp"
+                    app:cornerRadius="16dp"
                     app:shadowMarginBottom="16dp"
                     app:shadowMarginLeft="16dp"
                     app:shadowMarginRight="16dp"
@@ -546,7 +557,7 @@
                     <LinearLayout
                         android:id="@+id/addBtn"
                         android:layout_width="match_parent"
-                        android:layout_height="?attr/actionBarSize"
+                        android:layout_height="70dp"
                         android:background="@drawable/bg_round_square_white"
                         android:orientation="horizontal"
                         android:paddingHorizontal="16dp">

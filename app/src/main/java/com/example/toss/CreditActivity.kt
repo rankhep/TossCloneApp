@@ -17,6 +17,7 @@ class CreditActivity :AppCompatActivity (){
         mAdapter = CreditViewPagerAdapter(supportFragmentManager)
         viewPager.adapter = mAdapter
 
+        tabNameText.text = "신용"
         tab.addTab(tab.newTab().setText("신용관리"))
         tab.addTab(tab.newTab().setText("대출추천"))
         tab.addTab(tab.newTab().setText("카드추천"))

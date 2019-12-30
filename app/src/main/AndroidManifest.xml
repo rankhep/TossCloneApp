@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.toss" android:installLocation="preferExternal">
+    package="com.example.toss"
+    android:installLocation="preferExternal">
 
     <application
         android:allowBackup="true"
@@ -9,21 +10,19 @@
         android:roundIcon="@drawable/ic_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CardActivity"></activity>
+        <activity android:name=".CardReportActivity"></activity>
+        <activity android:name=".CardActivity" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".BorrowActivity" />
-        <activity android:name=".SplashActivity" >
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
-
-        <activity android:name=".CreditActivity"/>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".CreditActivity" />
     </application>
 
 </manifest>

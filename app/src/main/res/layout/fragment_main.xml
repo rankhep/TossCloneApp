@@ -337,7 +337,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:text="0원"
+                                android:text="55,400원"
                                 android:textColor="#666" />
 
                             <ImageView
@@ -350,7 +350,8 @@
 
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
+                            android:id="@+id/chungCard"
                             android:layout_height="?attr/actionBarSize">
 
                             <ImageView
@@ -378,8 +379,8 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/spoqa_han_sans_regular"
-                                    android:text="카드 내역 확인하기"
+                                    android:text="55,400원"
+                                    android:textStyle="bold"
                                     android:textColor="#000"
                                     android:textSize="14sp" />
 
@@ -390,7 +391,8 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:id="@+id/ollehCard"
+                            android:layout_width="match_parent"
                             android:layout_height="?attr/actionBarSize"
                             android:layout_marginBottom="16dp">
 
@@ -418,9 +420,9 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="카드 내역 확인하기"
+                                    android:textStyle="bold"
+                                    android:text="0원"
                                     android:textColor="#000"
-                                    android:fontFamily="@font/spoqa_han_sans_regular"
                                     android:textSize="14sp" />
 
 

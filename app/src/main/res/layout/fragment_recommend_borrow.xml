@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,455 +7,460 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/bg_round"
+                android:backgroundTint="#E7F0FD"
+                android:fontFamily="@font/spoqa_han_sans_regular"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="8dp"
+                android:text="추천"
+                android:textColor="#4384E5"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/spoqa_han_sans_regular"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="8dp"
+                android:text="신용"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/spoqa_han_sans_regular"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="8dp"
+                android:text="대환"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/spoqa_han_sans_regular"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="8dp"
+                android:text="서민지원"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/spoqa_han_sans_regular"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="8dp"
+                android:text="비상금"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/spoqa_han_sans_regular"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="8dp"
+                android:text="자동차 구매"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
-            android:background="@drawable/bg_round"
-            android:backgroundTint="#E7F0FD"
-            android:fontFamily="@font/spoqa_han_sans_regular"
-            android:paddingLeft="10dp"
-            android:paddingTop="8dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="8dp"
-            android:text="추천"
-            android:textColor="#4384E5"
-            android:textSize="12sp" />
+            android:layout_marginBottom="-8dp"
+            android:elevation="10dp"
+            app:cornerRadius="4dp"
+            app:shadowDy="10"
+            app:shadowMarginBottom="16dp"
+            app:shadowMarginLeft="16dp"
+            app:shadowMarginRight="16dp"
+            app:shadowMarginTop="16dp"
+            app:shadowRadius="14dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sendMoneyCard"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/bg_round_square_white">
+
+                <ImageView
+                    android:id="@+id/lotteImg"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_lotte"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lotteName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="롯데캐피탈"
+                    android:textColor="#000"
+                    app:layout_constraintLeft_toRightOf="@id/lotteImg"
+                    app:layout_constraintTop_toTopOf="@id/lotteImg" />
+
+                <TextView
+                    android:id="@+id/sinyong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="신용대출"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName"
+                    app:layout_constraintTop_toBottomOf="@id/lotteName" />
+
+                <TextView
+                    android:id="@+id/iza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/spoqa_han_sans_bold"
+                    android:text="5.9 ~ 19.9%"
+                    android:textColor="#4384E5"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@id/sim"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName" />
+
+                <TextView
+                    android:id="@+id/sim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="준법 감시인 심의필 1007-017호"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/bg_round_square"
+                    android:backgroundTint="#4384E5"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:text="나의 한도 확인"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.loopeer.shadow.ShadowView>
+
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
-            android:fontFamily="@font/spoqa_han_sans_regular"
-            android:paddingLeft="10dp"
-            android:paddingTop="8dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="8dp"
-            android:text="신용"
-            android:textSize="12sp" />
+            android:layout_marginBottom="-8dp"
+            android:elevation="10dp"
+            app:cornerRadius="4dp"
+            app:shadowDy="10"
+            app:shadowMarginBottom="16dp"
+            app:shadowMarginLeft="16dp"
+            app:shadowMarginRight="16dp"
+            app:shadowMarginTop="16dp"
+            app:shadowRadius="14dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/bg_round_square_white">
+
+                <ImageView
+                    android:id="@+id/lotteImg_"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/sbi"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lotteName_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="SBI저축은행"
+                    android:textColor="#000"
+                    app:layout_constraintLeft_toRightOf="@id/lotteImg_"
+                    app:layout_constraintTop_toTopOf="@id/lotteImg_" />
+
+                <TextView
+                    android:id="@+id/sinyong_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="중금리"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName_"
+                    app:layout_constraintTop_toBottomOf="@id/lotteName_" />
+
+                <TextView
+                    android:id="@+id/iza_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spoqa_han_sans_bold"
+                    android:text="5.9 ~ 18.9%"
+                    android:textColor="#4384E5"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/sim_"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName_" />
+
+                <TextView
+                    android:id="@+id/sim_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="준법 감시인 심의필 1007-017호"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName_" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/bg_round_square"
+                    android:backgroundTint="#4384E5"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:text="나의 한도 확인"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.loopeer.shadow.ShadowView>
+
+
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
-            android:fontFamily="@font/spoqa_han_sans_regular"
-            android:paddingLeft="10dp"
-            android:paddingTop="8dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="8dp"
-            android:text="대환"
-            android:textSize="12sp" />
+            android:layout_marginBottom="-8dp"
+            android:elevation="10dp"
+            app:cornerRadius="4dp"
+            app:shadowDy="10"
+            app:shadowMarginBottom="16dp"
+            app:shadowMarginLeft="16dp"
+            app:shadowMarginRight="16dp"
+            app:shadowMarginTop="16dp"
+            app:shadowRadius="14dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/bg_round_square_white">
+
+                <ImageView
+                    android:id="@+id/lotteImg__"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/hyundae"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lotteName__"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="롯데캐피탈"
+                    android:textColor="#000"
+                    app:layout_constraintLeft_toRightOf="@id/lotteImg__"
+                    app:layout_constraintTop_toTopOf="@id/lotteImg__" />
+
+                <TextView
+                    android:id="@+id/sinyong__"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="신용대출 CHANGE"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName__"
+                    app:layout_constraintTop_toBottomOf="@id/lotteName__" />
+
+                <TextView
+                    android:id="@+id/iza__"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spoqa_han_sans_bold"
+                    android:text="5.9 ~ 19.9%"
+                    android:textColor="#4384E5"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/sim__"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName__" />
+
+                <TextView
+                    android:id="@+id/sim__"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="준법 감시인 심의필 1007-017호"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName__" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/bg_round_square"
+                    android:backgroundTint="#4384E5"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:text="나의 한도 확인"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.loopeer.shadow.ShadowView>
+
+
+        <com.loopeer.shadow.ShadowView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
-            android:fontFamily="@font/spoqa_han_sans_regular"
-            android:paddingLeft="10dp"
-            android:paddingTop="8dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="8dp"
-            android:text="서민지원"
-            android:textSize="12sp" />
+            android:layout_marginBottom="-8dp"
+            android:elevation="10dp"
+            app:cornerRadius="4dp"
+            app:shadowDy="10"
+            app:shadowMarginBottom="16dp"
+            app:shadowMarginLeft="16dp"
+            app:shadowMarginRight="16dp"
+            app:shadowMarginTop="16dp"
+            app:shadowRadius="14dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
-            android:fontFamily="@font/spoqa_han_sans_regular"
-            android:paddingLeft="10dp"
-            android:paddingTop="8dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="8dp"
-            android:text="비상금"
-            android:textSize="12sp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/bg_round_square_white">
 
+                <ImageView
+                    android:id="@+id/lotteImg___"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/daesin"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
-            android:fontFamily="@font/spoqa_han_sans_regular"
-            android:paddingLeft="10dp"
-            android:paddingTop="8dp"
-            android:maxLines="1"
-            android:paddingRight="10dp"
-            android:paddingBottom="8dp"
-            android:text="자동차 구매"
-            android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/lotteName___"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="대신저축은행"
+                    android:textColor="#000"
+                    app:layout_constraintLeft_toRightOf="@id/lotteImg___"
+                    app:layout_constraintTop_toTopOf="@id/lotteImg___" />
 
+                <TextView
+                    android:id="@+id/sinyong___"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="직장인 신용대출"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName___"
+                    app:layout_constraintTop_toBottomOf="@id/lotteName___" />
+
+                <TextView
+                    android:id="@+id/iza___"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spoqa_han_sans_bold"
+                    android:text="5.9 ~ 19.9%"
+                    android:textColor="#4384E5"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@id/sim___"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName___" />
+
+                <TextView
+                    android:id="@+id/sim___"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:text="준법 감시인 심의필 1007-017호"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/lotteName___" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/bg_round_square"
+                    android:backgroundTint="#4384E5"
+                    android:fontFamily="@font/spoqa_han_sans_regular"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:text="나의 한도 확인"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.loopeer.shadow.ShadowView>
     </LinearLayout>
-
-    <com.loopeer.shadow.ShadowView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="-8dp"
-        android:elevation="10dp"
-        app:cornerRadius="4dp"
-        app:shadowDy="10"
-        app:shadowMarginBottom="16dp"
-        app:shadowMarginLeft="16dp"
-        app:shadowMarginRight="16dp"
-        app:shadowMarginTop="16dp"
-        app:shadowRadius="14dp">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/sendMoneyCard"
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:background="@drawable/bg_round_square_white">
-
-            <ImageView
-                android:id="@+id/lotteImg"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_margin="16dp"
-                android:src="@drawable/ic_lotte"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/lotteName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:text="롯데캐피탈"
-                android:textColor="#000"
-                app:layout_constraintLeft_toRightOf="@id/lotteImg"
-                app:layout_constraintTop_toTopOf="@id/lotteImg" />
-
-            <TextView
-                android:id="@+id/sinyong"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="신용대출"
-                android:textSize="12sp"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName"
-                app:layout_constraintTop_toBottomOf="@id/lotteName" />
-
-            <TextView
-                android:id="@+id/iza"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:fontFamily="@font/spoqa_han_sans_bold"
-                android:text="5.9 ~ 19.9%"
-                android:textColor="#4384E5"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/sim"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName" />
-
-            <TextView
-                android:id="@+id/sim"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:text="준법 감시인 심의필 1007-017호"
-                android:textSize="10sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:background="@drawable/bg_round_square"
-                android:backgroundTint="#4384E5"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:paddingLeft="8dp"
-                android:paddingTop="4dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="4dp"
-                android:text="나의 한도 확인"
-                android:textColor="#fff"
-                android:textSize="12sp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </com.loopeer.shadow.ShadowView>
-
-    <com.loopeer.shadow.ShadowView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="-8dp"
-        android:elevation="10dp"
-        app:cornerRadius="4dp"
-        app:shadowDy="10"
-        app:shadowMarginBottom="16dp"
-        app:shadowMarginLeft="16dp"
-        app:shadowMarginRight="16dp"
-        app:shadowMarginTop="16dp"
-        app:shadowRadius="14dp">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:background="@drawable/bg_round_square_white">
-
-            <ImageView
-                android:id="@+id/lotteImg_"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_margin="16dp"
-                android:src="@drawable/sbi"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/lotteName_"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:text="SBI저축은행"
-                android:textColor="#000"
-                app:layout_constraintLeft_toRightOf="@id/lotteImg_"
-                app:layout_constraintTop_toTopOf="@id/lotteImg_" />
-
-            <TextView
-                android:id="@+id/sinyong_"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:text="중금리"
-                android:textSize="12sp"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName_"
-                app:layout_constraintTop_toBottomOf="@id/lotteName_" />
-
-            <TextView
-                android:id="@+id/iza_"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/spoqa_han_sans_bold"
-                android:text="5.9 ~ 18.9%"
-                android:textColor="#4384E5"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@id/sim_"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName_" />
-
-            <TextView
-                android:id="@+id/sim_"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:text="준법 감시인 심의필 1007-017호"
-                android:textSize="10sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName_" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:background="@drawable/bg_round_square"
-                android:backgroundTint="#4384E5"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:paddingLeft="8dp"
-                android:paddingTop="4dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="4dp"
-                android:text="나의 한도 확인"
-                android:textColor="#fff"
-                android:textSize="12sp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </com.loopeer.shadow.ShadowView>
-
-
-    <com.loopeer.shadow.ShadowView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="-8dp"
-        android:elevation="10dp"
-        app:cornerRadius="4dp"
-        app:shadowDy="10"
-        app:shadowMarginBottom="16dp"
-        app:shadowMarginLeft="16dp"
-        app:shadowMarginRight="16dp"
-        app:shadowMarginTop="16dp"
-        app:shadowRadius="14dp">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:background="@drawable/bg_round_square_white">
-
-            <ImageView
-                android:id="@+id/lotteImg__"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_margin="16dp"
-                android:src="@drawable/hyundae"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/lotteName__"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:text="롯데캐피탈"
-                android:textColor="#000"
-                app:layout_constraintLeft_toRightOf="@id/lotteImg__"
-                app:layout_constraintTop_toTopOf="@id/lotteImg__" />
-
-            <TextView
-                android:id="@+id/sinyong__"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:text="신용대출 CHANGE"
-                android:textSize="12sp"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName__"
-                app:layout_constraintTop_toBottomOf="@id/lotteName__" />
-
-            <TextView
-                android:id="@+id/iza__"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/spoqa_han_sans_bold"
-                android:text="5.9 ~ 19.9%"
-                android:textColor="#4384E5"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@id/sim__"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName__" />
-
-            <TextView
-                android:id="@+id/sim__"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:text="준법 감시인 심의필 1007-017호"
-                android:textSize="10sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName__" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:background="@drawable/bg_round_square"
-                android:backgroundTint="#4384E5"
-                android:paddingLeft="8dp"
-                android:paddingTop="4dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="4dp"
-                android:text="나의 한도 확인"
-                android:textColor="#fff"
-                android:textSize="12sp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </com.loopeer.shadow.ShadowView>
-
-
-    <com.loopeer.shadow.ShadowView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="-8dp"
-        android:elevation="10dp"
-        app:cornerRadius="4dp"
-        app:shadowDy="10"
-        app:shadowMarginBottom="16dp"
-        app:shadowMarginLeft="16dp"
-        app:shadowMarginRight="16dp"
-        app:shadowMarginTop="16dp"
-        app:shadowRadius="14dp">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:background="@drawable/bg_round_square_white">
-
-            <ImageView
-                android:id="@+id/lotteImg___"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_margin="16dp"
-                android:src="@drawable/daesin"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/lotteName___"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:text="대신저축은행"
-                android:textColor="#000"
-                app:layout_constraintLeft_toRightOf="@id/lotteImg___"
-                app:layout_constraintTop_toTopOf="@id/lotteImg___" />
-
-            <TextView
-                android:id="@+id/sinyong___"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:text="직장인 신용대출"
-                android:textSize="12sp"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName___"
-                app:layout_constraintTop_toBottomOf="@id/lotteName___" />
-
-            <TextView
-                android:id="@+id/iza___"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/spoqa_han_sans_bold"
-                android:text="5.9 ~ 19.9%"
-                android:textColor="#4384E5"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/sim___"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName___" />
-
-            <TextView
-                android:id="@+id/sim___"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:text="준법 감시인 심의필 1007-017호"
-                android:textSize="10sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="@id/lotteName___" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:background="@drawable/bg_round_square"
-                android:backgroundTint="#4384E5"
-                android:fontFamily="@font/spoqa_han_sans_regular"
-                android:paddingLeft="8dp"
-                android:paddingTop="4dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="4dp"
-                android:text="나의 한도 확인"
-                android:textColor="#fff"
-                android:textSize="12sp"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </com.loopeer.shadow.ShadowView>
-
-</LinearLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginHorizontal="24dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/spoqa_han_sans_regular"
+        android:textColor="#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="18 | 수" />
+
+    <TextView
+        android:id="@+id/recordText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/spoqa_han_sans_regular"
+        android:maxLines="1"
+        android:textColor="#000"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/date"
+        app:layout_constraintRight_toLeftOf="@id/money"
+        app:layout_constraintTop_toTopOf="@id/date"
+        tools:text="모바일티머니충전" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spoqa_han_sans_regular"
+        android:text="12:00|일시불"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@id/recordText"
+        app:layout_constraintTop_toBottomOf="@id/recordText" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3,900원"
+        android:textColor="#000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/recordText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

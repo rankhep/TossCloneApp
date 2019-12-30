@@ -4,7 +4,6 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.view.View
@@ -15,7 +14,11 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.example.toss.fragment.CreateFragment
 import com.example.toss.fragment.MainFragment
 import com.example.toss.fragment.MenuFragment
+import com.example.toss.fragment.TimeLineFragment
 import kotlinx.android.synthetic.main.activity_main.*
+import java.sql.Time
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -38,6 +41,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val cDate = Date()
+        val fDate: String = SimpleDateFormat("dd").format(cDate)
+        day.text = fDate
 
         val fm: FragmentManager = supportFragmentManager
         val fragmentTransaction: FragmentTransaction = fm.beginTransaction()
@@ -51,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
         createBtn.setOnClickListener {
             setBottomBar()
-            val f =fm.beginTransaction()
+            val f = fm.beginTransaction()
             f.replace(R.id.fragment, CreateFragment.newInstance())
             f.commit()
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
@@ -91,7 +97,9 @@ class MainActivity : AppCompatActivity() {
 
         timelineBtn.setOnClickListener {
             setBottomBar()
-
+            val f = fm.beginTransaction()
+            f.replace(R.id.fragment, TimeLineFragment.newInstance())
+            f.commit()
             addBtn.visibility = View.VISIBLE
             tabName.text = "타임라인"
             dayOutLine.setBackgroundResource(R.drawable.bg_round_sqaure_blue)

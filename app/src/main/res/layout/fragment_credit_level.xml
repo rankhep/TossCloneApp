@@ -181,7 +181,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/spoqa_han_sans_bold"
-            android:text="내 산용평가 정보"
+            android:text="내 신용평가 정보"
             android:textColor="#000"
             android:textSize="16sp" />
 
@@ -215,6 +215,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/borrowBtn"
             android:layout_width="wrap_content"
             android:layout_height="?attr/actionBarSize">
 
